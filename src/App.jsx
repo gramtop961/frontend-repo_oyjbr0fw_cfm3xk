@@ -35,7 +35,7 @@ function SectionTitle({ kicker, title }) {
 }
 
 function App() {
-  const [year, setYear] = useState(new Date().getFullYear())
+  const [year] = useState(new Date().getFullYear())
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-purple-50">
@@ -43,7 +43,7 @@ function App() {
       <header className="sticky top-0 z-20 backdrop-blur bg-white/70 border-b border-gray-100">
         <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
           <a href="#home" className="text-lg font-bold tracking-tight text-gray-900">
-            FE → Data Science Journey
+            Ujwal Kashyap
           </a>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-gray-700">
             <a href="#about" className="hover:text-gray-900 transition-colors">About</a>
@@ -58,18 +58,26 @@ function App() {
       {/* Hero */}
       <section id="home" className="relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:py-28">
+          <div className="mb-8">
+            <div className="inline-flex items-center gap-2 rounded-full bg-blue-600/10 px-3 py-1 text-xs font-semibold text-blue-700">
+              <span>First-Year Engineering (FE)</span>
+              <span className="text-blue-400">•</span>
+              <span>Data Science • Python • AI</span>
+            </div>
+          </div>
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
               <div className="mb-4 flex flex-wrap gap-2">
-                <Badge>First-Year Engineering Student</Badge>
-                <Badge>Self-Taught Builder</Badge>
-                <Badge>Curious + Motivated</Badge>
+                <Badge>Motivated</Badge>
+                <Badge>Self-Taught</Badge>
+                <Badge>Curious</Badge>
+                <Badge>Builder</Badge>
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
-                Future Data Scientist & Software Engineer
+                Hey, I’m Ujwal Kashyap — future Data Scientist & Software Engineer
               </h1>
               <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                I’m an FE student diving head-first into Data Science, Python, AI, and real-world problem solving. I learn fast, build things, and keep pushing until it works. This is my space to share what I’m exploring and where I’m headed.
+                I’m an FE student sprinting into Data Science, Python, AI, and real-world problem solving. I learn fast, build small, and iterate until it clicks. This is where I share what I’m making and how I’m leveling up.
               </p>
               <div className="mt-6 flex items-center gap-3">
                 <a href="#projects" className="rounded-lg bg-blue-600 text-white px-5 py-3 text-sm font-semibold shadow-sm hover:bg-blue-700 transition-colors">See my projects</a>
@@ -95,10 +103,13 @@ function App() {
         <div className="mt-6 grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 text-gray-700 leading-relaxed">
             <p>
-              I’m building a solid technical foundation early so I can grow into a high-level data scientist and software engineer. I don’t wait for perfect conditions—I prototype, break things, and learn by doing.
+              I’m building a solid technical foundation early so I can grow into a high-level data scientist and software engineer. I don’t wait for perfect conditions — I prototype, break things, and learn by doing.
             </p>
             <p className="mt-4">
-              My approach is simple: stay curious, stay consistent, and keep leveling up. From Python mini-apps to electronics basics, I’m connecting dots between software and hardware to understand systems end-to-end.
+              Education so far: I completed my HSC at <span className="font-semibold text-gray-900">BSGD College</span> and my SSC at <span className="font-semibold text-gray-900">St. Anne’s</span>. Now in FE, I’m turning curiosity into skills and skills into projects.
+            </p>
+            <p className="mt-4">
+              My approach is simple: stay curious, stay consistent, and stack wins. From Python mini-apps to electronics basics, I’m connecting software and hardware to understand systems end-to-end.
             </p>
           </div>
           <div className="space-y-3">
@@ -139,7 +150,7 @@ function App() {
             <ProjectCard
               title="Python Mini-Apps"
               subtitle="Core Programming"
-              description="Small tools that do one thing well—like CLI utilities, data parsing, and simple visualizations to practice fundamentals."
+              description="Small tools that do one thing well — CLI utilities, data parsing, and simple visualizations to practice fundamentals."
               tags={["Python", "CLI", "Pandas", "Matplotlib"]}
             />
           </div>
@@ -182,7 +193,7 @@ function App() {
             <div className="rounded-xl bg-white p-6 border border-gray-100 shadow-sm">
               <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">Mid term</p>
               <h3 className="mt-1 font-semibold text-gray-900">Build portfolio depth</h3>
-              <p className="mt-2 text-gray-700">Tackle bigger problems—data pipelines, APIs, and real datasets.</p>
+              <p className="mt-2 text-gray-700">Tackle bigger problems — data pipelines, APIs, and real datasets.</p>
             </div>
             <div className="rounded-xl bg-white p-6 border border-gray-100 shadow-sm">
               <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">Long term</p>
@@ -202,14 +213,14 @@ function App() {
               I’m always open to mentorship, collaboration, and ideas. If you’re into data, AI, or cool build projects, I’d love to connect.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <a href="mailto:youremail@example.com" className="rounded-lg bg-blue-600 text-white px-5 py-3 text-sm font-semibold shadow-sm hover:bg-blue-700">Email me</a>
+              <a href="mailto:ujwalkashyap@example.com" className="rounded-lg bg-blue-600 text-white px-5 py-3 text-sm font-semibold shadow-sm hover:bg-blue-700">Email me</a>
               <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="rounded-lg border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">LinkedIn</a>
               <a href="https://github.com" target="_blank" rel="noreferrer" className="rounded-lg border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">GitHub</a>
             </div>
           </div>
           <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
             <p className="text-sm text-gray-600">Quick note</p>
-            <p className="mt-2 text-gray-800">I respond fast, and I’m always happy to learn from people ahead of me. If you have a challenge that needs energy and curiosity—I’m in.</p>
+            <p className="mt-2 text-gray-800">I respond fast, and I’m always happy to learn from people ahead of me. If you have a challenge that needs energy and curiosity — I’m in.</p>
           </div>
         </div>
       </section>
@@ -217,7 +228,7 @@ function App() {
       {/* Footer */}
       <footer className="border-t border-gray-100">
         <div className="mx-auto max-w-6xl px-4 py-8 text-sm text-gray-600 flex flex-col sm:flex-row items-center justify-between">
-          <p>© {year} Built with curiosity and consistency.</p>
+          <p>© {year} Ujwal Kashyap • Built with curiosity and consistency.</p>
           <div className="mt-3 sm:mt-0 flex items-center gap-4">
             <a href="#projects" className="hover:text-gray-900">Projects</a>
             <a href="#skills" className="hover:text-gray-900">Skills</a>
