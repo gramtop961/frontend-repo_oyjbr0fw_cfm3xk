@@ -106,7 +106,7 @@ function App() {
               I’m building a solid technical foundation early so I can grow into a high-level data scientist and software engineer. I don’t wait for perfect conditions — I prototype, break things, and learn by doing.
             </p>
             <p className="mt-4">
-              Education so far: I completed my HSC at <span className="font-semibold text-gray-900">BSGD College</span> and my SSC at <span className="font-semibold text-gray-900">St. Anne’s</span>. Now in FE, I’m turning curiosity into skills and skills into projects.
+              Education so far: I completed my HSC at <span className="font-semibold text-gray-900">Bombay Suburban Grain Dealers (BSGD) College</span> and my SSC at <span className="font-semibold text-gray-900">St. Anne’s High School</span>. Now in FE, I’m turning curiosity into skills and skills into projects.
             </p>
             <p className="mt-4">
               My approach is simple: stay curious, stay consistent, and stack wins. From Python mini-apps to electronics basics, I’m connecting software and hardware to understand systems end-to-end.
